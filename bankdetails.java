@@ -1,37 +1,33 @@
-class bank1
-{
-void rof
-{
-String bank="SBI";
-System.out.println("8.3");
-}
-}
-class bank2
-{
-void rof
-{
-String bank="ICCI";
-System.out.println("5.3");
-}
-}
-class bank3
-{
-void rof
-{
-String bank="HDFC";
-System.out.println("7.3");
-}
-}
+import java.util.*;
 class bankdetails
 {
 public static void main(String[]args)
 {
-bank1 p=new bank1();
-p.rof();
-bank2 n=new bank2();
-n.rof();
-bank3 r=new bank3();
-r.rof();
+Scanner input=new Scanner(System.in);
+System.out.println("enter the bank name =");
+String str=input.nextLine();//int n=input.nextInt();//float n=input.nextFloat
+if(str.equals("sbi") || str.equals("SBI"))
+{
+double intrest=7.88;
+System.out.println("rate of intrest ="+intrest);
+}
+else if(str.equals("hdfc") || str.equals("HDFC"))
+{
+double intrest=8.11;
+System.out.println("rate of intrest ="+intrest);
+}
+else if(str.equals("axsis") || str.equals("AXSIS"))
+{
+double intrest=6.11;
+System.out.println("rate of intrest ="+intrest);
+}
+else
+{
+System.out.println("invalid input");
 }
 }
+}
+
+
+
 
