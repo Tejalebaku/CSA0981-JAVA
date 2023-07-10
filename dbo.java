@@ -2,12 +2,10 @@ class dbo
 {
 public static void main(String[]args)
 {
-Scanner input=newScanner(System.in);
-String bin=input.nextLine();
-int dec=Integer.parseInt(bin,2);
-System.out.println("Decimal: "+dec);
+int dec=15;
+String bin=Integer.toBinaryString(dec);
 String oct=Integer.toOctalString(dec);
-System.out.println("Octal: "+oct);
-
+System.out.println("Binary number = "+bin);
+System.out.print("octal number = "+oct);}
 }
 }
